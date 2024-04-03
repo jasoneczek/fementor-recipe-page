@@ -1,0 +1,27 @@
+@font-face {
+  font-family: 'Young Serif';
+  src: url(assets/fonts/young-serif/YoungSerif-Regular.ttf) format('truetype');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Outfit';
+  src: url(assets/fonts/outfit/static/Outfit-Regular.ttf) format('truetype');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Outfit';
+  src: url(assets/fonts/outfit/static/Outfit-SemiBold.ttf) format('truetype');
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Outfit';
+  src: url(assets/fonts/outfit/static/Outfit-Bold.ttf) format('truetype');
+  font-style: normal;
+  font-weight: 700;
+}
