@@ -25,3 +25,46 @@
   font-style: normal;
   font-weight: 700;
 }
+
+:root {
+  --ff-s: 'Young Serif', serif;
+  --ff-ss: Outfit, sans-serif;
+
+  --fw-r: 400;
+  --fw-sb: 600;
+  --fw-b: 700;
+
+  --fs-lg: 2.5rem; 
+  --fs-md: 1.75rem;
+  --fs-sm: 1.25rem;
+  --fs-p: 1rem;
+
+  --spacer: 0.5rem;
+  --spacer-sm: calc(var(--spacer) * 2);
+  --spacer-md: calc(var(--spacer) * 3);
+  --spacer-lg: calc(var(--spacer) * 4);
+  --spacer-xl: calc(var(--spacer) * 5);
+
+  --radius-1: 0.75rem;
+  --radius-2: 1.5rem;
+
+  --nutmeg: hsl(14, 45%, 36%);
+  --dark-raspberry: hsl(332, 51%, 32%);
+  --white: hsl(0, 0%, 100%);
+  --rose-white: hsl(330, 100%, 98%);
+  --eggshell: hsl(30, 54%, 90%);
+  --light-grey: hsl(30, 18%, 87%);
+  --wenge-brown: hsl(30, 10%, 34%);
+  --dark-charcoal: hsl(24, 5%, 18%);
+
+  --clr-bg-body: var(--eggshell);
+  --clr-bg-main: var(--white);
+  --clr-bg-prep: var(--rose-white);
+
+  --clr-h1: var(--dark-charcoal);
+  --clr-h2: var(--dark-raspberry);
+  --clr-h3: var(--nutmeg);
+  --clr-p: var(--wenge-brown);
+
+  --clr-border: var(--light-grey);
+}
