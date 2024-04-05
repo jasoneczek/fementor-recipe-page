@@ -49,6 +49,9 @@
   --fs-h2: var(--fs-sm);
   --fs-h3: var(--fs-md);
 
+  /* footer font size */
+  --fs-footer: clamp(var(--fs-xs), 4vw, var(--fs-p));
+
   /* spacing */
   --spacer-1: 0.5rem; 
   --spacer-2: 1rem;
@@ -63,7 +66,8 @@
   --width-main: min(100%, 46rem);
 
   /* paddings */
-  --padding-body: clamp(0rem, calc((100vw - 375px) / 5), 7.71875rem);
+  --padding-body: clamp(0rem, calc((100% - 46rem) / 5), 7.71875rem);
+  --padding-top-main: clamp(0rem, calc((100% - 46rem) / 10), 2.5rem);
   --padding-content: var(--spacer-8) clamp(var(--spacer-6), 4vw + 1rem, var(--spacer-8));
   --padding-prepbox: clamp(var(--spacer-4), 2vw + 1rem, var(--spacer-5));
   --padding-sections: var(--spacer-6);
@@ -76,7 +80,9 @@
 
   /* border radii */
   --radius-1: 0.75rem;
-  --radius-2: clamp(0rem, 4vw, 1.5rem);
+  --radius-2: 1.5rem;
+  --dynamic-radius-1: max(0px, min(var(--radius-1), (100% - 375px) * 9999)) / var(--radius-1);
+  --dynamic-radius-2: max(0px, min(var(--radius-2), (100% - 375px) * 9999)) / var(--radius-2);
 
   /* colors */
   --nutmeg: hsl(14, 45%, 36%);
@@ -103,6 +109,7 @@
   --clr-border: var(--light-grey);
 }
 
+/* reset */
 html {
   font-size: 100%;
   box-sizing: border-box;
@@ -147,9 +154,19 @@ img {
   display: block;
 }
 
+/* main component */
 main {
+  padding-top: var(--padding-top-main);
   background-color: var(--clr-bg-main);
   width: var(--width-main);
+  overflow: hidden;
+  border-radius: var(--dynamic-radius-2);
+}
+
+.img-wrapper {
+  border-radius: var(--dynamic-radius-1);
+  width: min(100%, 41rem);
+  margin: 0 auto;
   overflow: hidden;
 }
 
@@ -283,6 +300,22 @@ tr:last-child .table__data {
 
 /* footer stylings */
 .attribution {
-  font-size: var(--fs-xs);
+  text-align: center;
+  font-size: var(--fs-footer);
 }
 
+.attribution p {
+  margin-block: var(--spacer-1);
+}
+
+.attribution a {
+  color: var(--dark-charcoal);
+}
+
+.attribution a:hover {
+  color: var(--dark-raspberry);
+}
+
+.attribution a:visited {
+  color: var(--nutmeg);
+}
