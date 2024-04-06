@@ -66,8 +66,8 @@
   --width-main: min(100%, 46rem);
 
   /* paddings */
-  --padding-body: clamp(0rem, calc((100% - 46rem) / 5), 7.71875rem);
-  --padding-top-main: clamp(0rem, calc((100% - 46rem) / 10), 2.5rem);
+  --padding-body: clamp(0rem, calc((100% - 400px) / 5), 7.71875rem);
+  --padding-top-main: clamp(0rem, calc((100% - 400px) / 10), 2.5rem);
   --padding-content: var(--spacer-8) clamp(var(--spacer-6), 4vw + 1rem, var(--spacer-8));
   --padding-prepbox: clamp(var(--spacer-4), 2vw + 1rem, var(--spacer-5));
   --padding-sections: var(--spacer-6);
@@ -81,8 +81,8 @@
   /* border radii */
   --radius-1: 0.75rem;
   --radius-2: 1.5rem;
-  --dynamic-radius-1: max(0px, min(var(--radius-1), (100% - 375px) * 9999)) / var(--radius-1);
-  --dynamic-radius-2: max(0px, min(var(--radius-2), (100% - 375px) * 9999)) / var(--radius-2);
+  --dynamic-radius-1: max(0px, min(var(--radius-1), (100% - 400px) * 9999)) / var(--radius-1);
+  --dynamic-radius-2: max(0px, min(var(--radius-2), (100% - 400px) * 9999)) / var(--radius-2);
 
   /* colors */
   --nutmeg: hsl(14, 45%, 36%);
