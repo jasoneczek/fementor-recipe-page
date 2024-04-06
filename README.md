@@ -58,8 +58,15 @@ I also further explored using CSS custom properties in tandem with math function
 /* border radii */
 --radius-1: 0.75rem;
 --radius-2: 1.5rem;
---dynamic-radius-1: max(0px, min(var(--radius-1), (100% - 400px) * 9999)) / var(--radius-1);
---dynamic-radius-2: max(0px, min(var(--radius-2), (100% - 400px) * 9999)) / var(--radius-2);
+--breakpoint: 28.125rem;
+--dynamic-radius-1: max(
+    0px,
+    min(var(--radius-1), (100% - var(--breakpoint)) * 9999)
+  ) / var(--radius-1);
+--dynamic-radius-2: max(
+    0px,
+    min(var(--radius-2), (100% - var(--breakpoint)) * 9999)
+  ) / var(--radius-2);
 
 main {
   padding-top: var(--padding-top-main);
