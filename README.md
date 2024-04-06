@@ -25,7 +25,7 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### Links
 
-- Solution URL: [Frontend Mentor](https://your-solution-url.com)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/recipe-page-with-custom-properties-dynamic-padding-and-layout-lErrog9TN2)
 - Live Site URL: [Live](https://fementor-recipe-page.vercel.app/)
 
 ## My process
